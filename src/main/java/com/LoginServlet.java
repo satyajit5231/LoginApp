@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
         String pass = request.getParameter("password");
 
         // FIXED: compare variables, not string literals
-        if ("admin".equals(user) && "123".equals(pass)) {
+        if ("Anwesha".equals(user) && "2204".equals(pass)) {
             request.getRequestDispatcher("success.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("error.jsp").forward(request, response);
